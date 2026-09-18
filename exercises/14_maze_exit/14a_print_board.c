@@ -29,16 +29,32 @@ int my_rand(void) {
 }
 
 void init_chessboard(void) {
-#error TODO: Fill chessboard[i][j] = my_rand() % 2 with nested loops. Run "clings hint" for help.
+for(int i = 0;i < ROW;i++)
+{
+for(int j = 0;j < COL;j++){
+chessboard[i][j] = my_rand() % 2;
+}
+}
 }
 
 void print_chessboard(void) {
-#error TODO: Print board with nested loops, spaces between elements. Run "clings hint" for help.
+for(int i = 0;i < ROW;i++)
+{
+for(int j = 0;j < COL;j++)
+{
+if(j > 0)
+{
+printf(" ");
+}
+printf("%d",chessboard[i][j]);
+}
+printf("\n");
+}
 }
 
 int main(void) {
     init_chessboard();
     print_chessboard();
-
     return 0;
 }
+

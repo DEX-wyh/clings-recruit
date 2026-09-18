@@ -18,10 +18,15 @@
 int main(void) {
     int i;
     int sum = 0;
-
-#error TODO: Fix this exercise. Run "clings hint" for help.
-
-#error TODO: Fix this exercise. Run "clings hint" for help.
-
+    int j = 1;
+for(i=10;i>0;i--)
+   printf("counter = %d\n",i);
+do
+{
+   sum=sum+j;
+   j++;
+}
+while(j<=10);
+printf("sum = %d\n",sum);
     return 0;
 }

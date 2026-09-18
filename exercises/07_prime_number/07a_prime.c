@@ -24,8 +24,23 @@ int main(void) {
     int i;
     int max = 0;
 
-#error TODO: Fix this exercise. Run "clings hint" for help.
-
+for(num=1;num<=100;num++)
+{
+int tmp = (int)sqrt((double)num);
+int is_prime = 1;
+for(i=2;i<=tmp;i++)
+{
+if(num % i == 0)
+{
+is_prime = 0;
+break;
+}
+}
+if(is_prime == 1)
+{
+ max = num;
+}
+}
     printf("max prime is %d\n", max);
 
     return 0;
